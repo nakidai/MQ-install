@@ -6,5 +6,5 @@ Using
 --
 Just run this command in shell:
 ```sh
-sh -c "$(wget -O- https://github.com/nakidai/MQ-install/raw/master/install.sh)"
+sh -c "$(wget -O- https://github.com/nakidai/MQ-install/raw/master/install.sh 2>/dev/null)"
 ```
