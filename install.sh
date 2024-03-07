@@ -3,8 +3,6 @@
 # MQ install script
 # (c) 2024 Nakidai
 
-string_contain() { case $2 in *$1* ) return 0;; *) return 1;; esac ;}
-
 DEFAULT_SL_PATH="/home/$(logname)/.local/share/Steam/steamapps/"
 DEFAULT_MQ_VER="1_1"
 
