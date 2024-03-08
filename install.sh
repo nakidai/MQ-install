@@ -26,19 +26,19 @@ if ! wget -O- "https://github.com/UltraQbik/SMC-MQ-CPU/raw/main/cpu_blueprints/$
 fi
 
 echo "Downloading..."
+mkdir -p "$slpath/workshop/content/387990/$bppath"
 echo " blueprint.json..."
-mkdir -p "$slpath/workshop/387990/$bppath"
-if ! wget -O "$slpath/workshop/387990/$bppath/blueprint.json" "https://github.com/UltraQbik/SMC-MQ-CPU/raw/main/cpu_blueprints/$bppath/blueprint.json" > /dev/null 2>&1; then
+if ! wget -O "$slpath/workshop/content/387990//$bppath/blueprint.json" "https://github.com/UltraQbik/SMC-MQ-CPU/raw/main/cpu_blueprints/$bppath/blueprint.json" > /dev/null 2>&1; then
     echo "Cannot download \"https://github.com/UltraQbik/SMC-MQ-CPU/raw/main/cpu_blueprints/$bppath/blueprint.json\", stopping..."
     exit 1
 fi
 echo " description.json..."
-if ! wget -O "$slpath/workshop/387990/$bppath/description.json" "https://github.com/UltraQbik/SMC-MQ-CPU/raw/main/cpu_blueprints/$bppath/description.json" > /dev/null 2>&1; then
+if ! wget -O "$slpath/workshop/content/387990/$bppath/description.json" "https://github.com/UltraQbik/SMC-MQ-CPU/raw/main/cpu_blueprints/$bppath/description.json" > /dev/null 2>&1; then
     echo "Cannot download \"https://github.com/UltraQbik/SMC-MQ-CPU/raw/main/cpu_blueprints/$bppath/description.json\", stopping..."
     exit 1
 fi
 echo " icon.png..."
-if ! wget -O "$slpath/workshop/387990/$bppath/icon.png" "https://github.com/UltraQbik/SMC-MQ-CPU/blob/main/cpu_blueprints/$bppath/icon.png?raw=true" > /dev/null 2>&1; then
+if ! wget -O "$slpath/workshop/content/387990/$bppath/icon.png" "https://github.com/UltraQbik/SMC-MQ-CPU/blob/main/cpu_blueprints/$bppath/icon.png?raw=true" > /dev/null 2>&1; then
     echo "Cannot download \"https://github.com/UltraQbik/SMC-MQ-CPU/blob/main/cpu_blueprints/$bppath/icon.png?raw=true\""
     exit 1
 fi
