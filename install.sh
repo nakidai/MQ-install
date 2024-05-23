@@ -1,7 +1,10 @@
 #!/bin/sh
-
-# MQ install script
-# (c) 2024 Nakidai
+# <------------------------------------------------------->
+# (c) People
+# Permission to do whatever you want with this thing, except
+# for erasing all copies from the world, is hereby granted.
+# <------------------------------------------------------->
+# MQ install script:
 
 DEFAULT_SL_PATH="/home/$(logname)/.local/share/Steam/steamapps/"
 DEFAULT_MQ_VER="1_1"
